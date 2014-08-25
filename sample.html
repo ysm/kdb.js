@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>kdb.js</title>
+  </head>
+
+  <body>
+
+    <script src="c.js"></script>
+    <script src="kdb.js"></script>
+
+    <script type="text/javascript">
+    var kdb = new KDB("localhost", 1234);
+    kdb.query("239*239", function(data) {
+      console.log(data);
+    });
+    </script>
+
+  </body>
+</html>
